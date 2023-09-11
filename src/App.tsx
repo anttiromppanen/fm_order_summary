@@ -4,14 +4,13 @@ import Card from "./components/Card";
 
 function App() {
   return (
-    <div className="bg-userPaleBlue w-full h-screen p-4 flex justify-center items-center">
+    <div className="flex h-screen w-full items-center justify-center bg-userPaleBlue p-4">
       <picture>
         <source media="(min-width: 900px)" srcSet={backgroundOverlayDesktop} />
-        <source media="(max-width: 899px)" srcSet={backgroundOverlayMobile} />
-        <img 
-          src={backgroundOverlayMobile} 
-          alt="Background overlay" 
-          className="w-full absolute top-0 left-0" 
+        <img
+          src={backgroundOverlayMobile}
+          alt="Background overlay"
+          className="absolute left-0 top-0 z-0 w-full"
         />
       </picture>
       <Card />
